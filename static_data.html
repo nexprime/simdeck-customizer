@@ -22,27 +22,27 @@ To submit your custom layout for review and order,
 <script>
 var content;
 if (window.location.search.indexOf("?q=CustomSpec:") == 0) {
-  content = decodeURI(window.location.search.substring(3));
+  content = decodeURI(window.location.search.substring(3)) + "<br>[End of Spec] <i>Email to: borealis.simdecks@gmail.com</i>";
 } else {
-	content = "An error has occured.";
+	content = "An error has occurred - specification can not be parsed.<br>If this error persists, alternatively you can email a screenshot of your custom layout to: borealis.simdecks@gmail.com";
 }
   var para = document.createElement("P");
-  para.innerHTML = content + "<br>[End of Spec]";
+  para.innerHTML = content;
   document.getElementById("CustomSpecs").appendChild(para);
 </script>
 <br>
 
-<div id="TextBody"><span style="font-weight: bold; text-decoration: underline;"><br>The Construction Process:</span><br><ol><li>Your
-custom layout is verified for electrical and mechanical compatability.
+<div id="TextBody"><span style="font-weight: bold; text-decoration: underline;"><br>The&nbsp;Process:</span><br><ol><li>Your
+custom layout will be verified for electrical and mechanical compatibility.
 If there are warnings of "Over budget" (too many inputs)
 or "Overlap" (modules colliding with each other) we will attempt to fix
 the problems where possible.</li><li>The
-layout is then corrected for&nbsp;aesthetics - modules are alligned,
+layout is then corrected for&nbsp;aesthetics - modules are aligned,
 centered, and squared-off as needed, while still keeping the overall
-layout the same.</li><li>You will then receive a CAD rednering of the
-final deisgn and a PayPal invoice. If you're happy with the design,
+layout the same.</li><li>You will then receive a CAD rendering  of the
+final design and a PayPal invoice. If you're happy with the design,
 work will begin once the invoice is paid.</li><li>Construction time
-varies based on the design complexity and part availibility - you will
-receive an estimate along with the final design rendering.</li></ol><br><div style="text-align: right;"><span style="font-style: italic;">Thank you for using the Borealis SimDeck Customizer!</span></div></div>
+varies based on the design complexity and part availability - you will
+receive an estimate along with the final design rendering.</li><li>Once the assembly is complete and your custom SimDeck is shipped out, you will be updated with tracking information.<br></li></ol><div style="text-align: right;"><span style="font-style: italic;">Thank you for using the Borealis SimDeck Customizer!</span></div></div>
 </center>
 </body></html>

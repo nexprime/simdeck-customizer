@@ -1,8 +1,142 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type"><style>
-html, body { padding: 0; margin: 0; }
-#TextBody { border: 1px solid black; width: 50%; word-wrap: break-word; text-align:left; padding-left:25px; padding-right:25px}
-</style><title>Borealis SimDeck Custom Layout Help</title><meta content="Borealis Light Industries" name="author"></head>
-<body><h1 style="text-align: center;"><span style="font-family: Verdana;">Borealis SimDeck Customization Utility</span></h1><h1 style="text-align: center;"><span style="font-family: Verdana;">FAQ and Help</span></h1><h1><span style="font-family: Verdana;"></span></h1><span style="font-family: Verdana;"><br></span><h2><span style="font-family: Verdana;">The SimDeck and various types of inputs</span></h2><br><h2><span style="font-family: Verdana;">Creating a custom layout</span></h2><br><h2><span style="font-family: Verdana;">Specification limitations</span></h2><br><h2><span style="font-family: Verdana;">Placing an order</span></h2><br><h2><span style="font-family: Verdana;">Troubleshooting</span></h2><br><br><div style="text-align: right;"><span style="font-style: italic;">Borealis Light Industries (c) 2019 (borealis.simdecks@gmail.com</span></div><h2><span style="font-family: Verdana;"></span></h2>
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial,Helvetica,sans-serif;
+}
 
+#IndexBody {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 6px 0px;
+  padding: 15px;
+  text-align: left;
+
+  background-color: white;
+  width: 250px;
+  top: 50px;
+  left: 10px;
+  line-height: 2;
+}
+
+#TextBody {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  border-width: 6px 0px;
+  padding: 25px;
+  text-align: left;
+  background-color: white;
+  min-width: 700px;
+  max-width: 1200px;
+  flex: 1 1 800px;
+}
+#TextSides {
+  flex: 0 0 270px;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+.flex-container { 
+  display: flex;
+}
+
+.flex-container > div {
+  align-self: flex-start;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #3333ff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #33c5ff;
+}
+
+h2, h3 {
+  text-indent: 50px;
+
+}
+
+table {
+  border-collapse: collapse;
+}
+
+</style><title>Borealis SimDecks FAQ</title><meta content="Borealis SimDecks" name="author"></head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(78, 152, 185);" alink="#000099" link="#000099" vlink="#990099">
+
+
+
+<div style="font-family: Helvetica,Arial,sans-serif;" class="flex-container">
+<div id="TextSides">
+<div id="IndexBody"><a href="#The_SimDeck">The SimDeck</a><br>&nbsp;&nbsp;&nbsp; <a href="help_info.html#Compatability">Compatibility</a><br>&nbsp;&nbsp;&nbsp; <a href="#Construction">Construction</a><a href="#Compatability"></a><br>&nbsp;&nbsp;&nbsp; <a href="#Using_the_SimDeck">Using the SimDeck</a><br>&nbsp;&nbsp;&nbsp; <a href="#Multiple_SimDecks">Multiple SimDecks</a><br><a href="#Custom_Layouts">Custom Layout</a><br>&nbsp;&nbsp;&nbsp; <a href="#Types_of_inputs">Types of Inputs</a><br>&nbsp;&nbsp;&nbsp; <a href="#Using_the_utility">Using the Utility</a><br>&nbsp;&nbsp;&nbsp; <a href="#Limitations">Limitations</a><br><a href="#Placing_an_order">Placing an Order</a><br>&nbsp;&nbsp;&nbsp; <a href="#Delivery_Time">Delivery Time</a><br>&nbsp;&nbsp;&nbsp; <a href="#Shipping_Cost">Shipping Costs</a><br><a href="#Troubleshooting">Troubleshooting</a><br><br><br><div style="text-align: right;"><span style="font-style: italic;">Borealis SimDecks </span><span style="font-style: italic;">(c) 2019<br>borealis.simdecks@gmail.com</span>
+</div></div>
+</div>
+<div id="TextBody"><h1 style="text-align: center;"><img style="width: 562px; height: 182px;" alt="" src="web/BorealisLogo.png" align="middle"><br></h1><h1 style="text-align: center; text-decoration: underline;">FAQ and Help</h1><h1></h1><br><hr style="width: 100%; height: 2px;"><h2><a name="The_SimDeck"></a>The SimDeck</h2>What is a SimDeck?<br><br>A
+SimDeck is what we call a USB input device consisting of a number of
+discrete buttons and switches - commonly referred to as a "control
+panel" or a "button box".<br><br>The primary purpose for a SimDeck is
+to be used as in input device in a simulator environment -&nbsp;flight,
+space, driving, or otherwise.<br><br>The advantages of using a SimDeck include:<br><ul><li>greatly
+enhancing the user's immersion in the simulation by providing a set of
+physical controls which&nbsp;closely resemble those found in
+the&nbsp;piece of hardware being simulated;</li><li>greatly increasing
+the number of controls the user is able to utilize with ease by aiding
+muscle-memory with varied tactile feel and logical grouping of
+controls - especially when compared to using a keyboard;</li><li>greatly
+simplifying the control scheme in many cases by allowing&nbsp;functions
+in the simulation to be mapped to a unique button press or a flick of a
+switch - as opposed using 2-, 3-, and sometimes 4-key shortcuts on the
+keyboard.</li></ul><br><span style="font-style: italic;">TL;DR<br>&nbsp;&nbsp;&nbsp; It's a USB gamepad with 30+ buttons.<br></span><br><h3><a name="Compatability"></a>Compatibility</h3>Will it work with my OS or software?<br><br>The
+hardware behind each SimDeck is designed to function as any regular USB
+HID (human interface device) and will appear in the operating system as
+a "joystick".<br><br>Unfortunately&nbsp;it is impractical for us to
+test every single hardware and software combination. However the rule
+of thumb to follow is if your hardware and software are able to easily
+use any and all off-the-shelf USB peripheral (specifically joysticks and
+gamepads), there should not be any problems with a SimDeck either.<br><br>In
+Windows 7 and later, as well as just about any Linux distro, the
+drivers are automatically detected as soon as the SimDeck is plugged
+into the USB port. No additional software of any sort needs to be
+installed.<br><br>Any piece of software which allows custom control
+bindings from a joystick or gamepad will be able to detect input from
+the SimDeck just as well.<br><br><br><span style="font-style: italic;">TL;DR</span><br><span style="font-style: italic;">&nbsp;&nbsp;&nbsp; Windows, Linux, Mac - good to go!</span><br style="font-style: italic;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp; Xbox, PlayStation, etc - not so much.</span><br style="font-style: italic;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp; Software where a joystick can be used (pretty much all PC sim games) - good to go!</span><br style="font-style: italic;"><span style="font-style: italic;">&nbsp;&nbsp;&nbsp;
+Software where only keyboard and mouse can be used (i.e. Excel) - not
+so much.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span><br><br><h3><a name="Construction"></a>Construction</h3>How is a SimDeck constructed?<br><br>Each SimDeck is hand-assembled from a variety of components.<br><br>The
+outer enclosure is sourced by Hammond Manufacturing - an electrical and
+electronic hardware manufacturer with over 100 years in the business.<br>The enclosure is made from 14-gage (1.6mm thick!) powder-coated aluminum and sits on a set of grippy rubber feet.<br><br>The
+buttons and switches are&nbsp;from various sources however, in&nbsp;all
+cases they have been chosen for their superior tactile feel and
+aesthetic appearance. The buttons are not mushy and provide definitive
+feedback when pressed; the flat anti-rotation handles on the toggle
+switches are easy to actuate in a hurry. See "Types of Inputs" for
+more&nbsp;about these.<br><br>The
+microprocessor running the device is an ARM Cortex-M0+, a very capable
+processor with plenty of power in reserve. In fact this is the same
+processor the researchers at University of Michigan&nbsp;used&nbsp;in
+2018 for their "<a target="_blank" href="https://news.umich.edu/u-m-researchers-create-worlds-smallest-computer/">world's smallest computer</a>".<br><br>Internally,
+all electronics are mounted on custom designed and professionally
+manufactured circuit-boards and wired together with ribbon cable. This
+provides the greatest degree of electrical stability and resistance to
+vibration and shock.<br><br>Before delivery each SimDeck is thoroughly tested for functionality and finish.<br><br><br><span style="font-style: italic;">TL;DR<br></span>&nbsp;&nbsp;&nbsp; <span style="font-style: italic;">You could hammer nails with this thing, but please don't - the finish my get scratched :)<br><br></span><h3><a name="Using_the_SimDeck"></a>Using the SimDeck</h3>How easy is it to use the SimDeck?<br><br>Absolutely no software or drivers need to be installed - the SimDeck is completely plug-in-play:<br><ul><li>Plug in the USB cable</li><li>Give your computer a minute to recognize the new device</li><li>You're ready to go!</li></ul>The
+rest is entirely upto the software you're using. In the case of my
+flight-sims, you'd need to go into the options to configure the
+controls and assign buttons to functions.<br><br><br><span style="font-style: italic;">TL;DR<br>&nbsp;&nbsp;&nbsp; Not any more difficult than setting up a basic keyboard.<br></span><span style="font-style: italic;"></span><br><h3><a name="Multiple_SimDecks"></a>Multiple SimDecks</h3>Is it possible to use multiple SimDecks at the same time?<br><br>Yes, absolutely!<br><br>The
+only "gotcha", is that certain software might keep a separate controls
+profile depending on the number of SimDecks plugged in. Meaning it is
+not an issue if you're not planning on removing and adding SimDecks on
+a regular basis.<br><br><span style="font-style: italic;">TL;DR<br>&nbsp;&nbsp;&nbsp; Yes!</span><br><br><hr style="width: 100%; height: 2px;"><h2><a name="Custom_Layouts"></a>Custom Layout</h2><h3><a name="Types_of_inputs"></a>Types of inputs</h3><h3><a name="Using_the_utility"></a>Using the utility</h3><h4></h4>&nbsp;- creating a custom design<br><br><h3><a name="Limitations"></a>Limitations</h3><h4></h4>&nbsp;- physical clearances and electrical limitations<br><br><br><hr style="width: 100%; height: 2px;"><br><h2><a name="Placing_an_order"></a>Placing an Order</h2><br>Currently we accept order requests directly via our email: borealis.simdecks@gmail.com and payment via PayPal.<br><br>To place an order, please email us the following:<br><ul><li>Your shipping address</li><li>Shipping method you'd like to use (Economy or Express)</li><li>The quantity of SimDecks you'd like</li><li>If ordering a custom layout, please remember to include the output from the customization utility</li></ul>Once we process your request will receive a PayPal invoice, including a shipping quote.<br><br>Once the invoice is paid, the assembly of your SimDeck will begin!<br><br><h3><a name="Delivery_Time"></a>Delivery Time</h3>We strive to have each order complete in less than three weeks from the moment&nbsp;invoice is paid.<br><br>In vast majority of cases, you will hopefully find the delivery time to be shorter than that.<br><br>Since
+we are not currently&nbsp;able to keep each combination of button and
+switch in stock in mass quantities we order them on as-needed basis.
+Therefore the vast majority of the three-week delivery time we expect
+to be waiting for parts to arrive.<br><br>You will also be kept updated, especially If there are delays beyond the three-week time line.<br><br><h3><a name="Shipping_Cost"></a>Shipping Cost<br></h3>Below are the <span style="font-style: italic;"><span style="font-weight: bold;">average</span></span> shipping cost per destination - your invoice will include the exact shipping cost.<br><br>You will only be changed the cost from the Post Office - we do not add a shipping surcharge.<br><br>In all cases the shipment will be tracked and have insurance coverage.<br><br><table style="text-align: left; width: 518px; height: 163px;" border="1" cellpadding="5" cellspacing="2"><tbody><tr><td style="font-style: italic; background-color: rgb(158, 202, 255); text-align: center;">Destination</td><td style="text-align: center; font-style: italic; background-color: rgb(158, 202, 255);">Economy</td><td style="text-align: center; font-style: italic; background-color: rgb(158, 202, 255);">Express</td></tr><tr><td style="text-align: left;">Canada</td><td style="text-align: center;">$15~20<br>(6-7 business days)</td><td style="text-align: center;">$17~32<br>(2-3 business days)</td></tr><tr><td>USA</td><td style="text-align: center;">$20~23<br>(6-7 business days)</td><td style="text-align: center;">$29~32<br>(4-5 business days)</td></tr><tr><td>Europe</td><td style="text-align: center;">$40~50</td><td style="text-align: center;">$60~80<br>(6 business days)</td></tr><tr><td>Others</td><td style="text-align: center;" colspan="2" rowspan="1"><span style="font-style: italic;">Please inquire</span></td></tr></tbody></table><span style="font-style: italic;">All prices are in US dollars.</span><br><br><hr style="width: 100%; height: 2px;"><br><h2><a name="Troubleshooting"></a>Troubleshooting</h2><br><br><br><br><br><br><br><br><br><div style="text-align: right;"></div>
+</div>
+<div id="TextSides"></div>
+</div>
 </body></html>
